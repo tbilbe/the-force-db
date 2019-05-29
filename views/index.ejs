@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My first db</title>
+  <style>
+    body {
+      background-color: rgba(250, 32, 79, 0.3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      border: 2px solid darkorchid;
+      border-radius: 4px;
+      background-color: azure;
+      color: rgb(245, 49, 140);
+      display: inline-block;
+    }
+
+    li {
+      list-style: none;
+      line-height: 1.6;
+    }
+
+    span.name {
+      font-size: 20px;
+      font-weight: 900;
+      color: purple;
+      text-transform: capitalize;
+    }
+
+    button {
+      border-radius: 3px;
+    }
+
+    button:hover {
+      box-shadow: 2px 3px #6b0799;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>WELCOME TO THE DARKSIDE</h1>
+
+  <ul class="quotes">
+    <% for(var i=0; i<quotes.length; i++) {%>
+    <li class="quote">
+      <span class="name"><%= quotes[i].name %></span> -
+      <span class="quote">"<%= quotes[i].quote %>"</span>
+    </li>
+    <% } %>
+  </ul>
+
+  <form action="/quotes" method="POST">
+    <input type="text" placeholder="name" name="name">
+    <input type="text" placeholder="quote" name="quote">
+    <button type="submit">Submit</button>
+  </form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "the-force-db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "d": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbilbe/the-force-db.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tbilbe/the-force-db/issues"
+  },
+  "homepage": "https://github.com/tbilbe/the-force-db#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "mongodb": "^3.2.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
